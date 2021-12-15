@@ -1,0 +1,32 @@
+﻿<Window x:Class="kp_hotel.v2.Windows.AddNewRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Добавление комнаты" Height="600" Width="450" Background="#FF464646" MinWidth="400" MinHeight="500" FontFamily="Comic Sans MS" FontSize="20" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Viewbox>
+
+        <Grid Margin="20" Height="332">
+            <Button x:Name="BtnAddRoom" Content="Добавление" HorizontalAlignment="Center" Margin="43,251,47,47" VerticalAlignment="Center" Width="154" Click="BtnAddRoom_Click" Height="34" Background="White"/>
+            <Button x:Name="btnBack" Content="Назад" Margin="43,290,47,10" Click="BtnBack_Click" Background="White"/>
+
+            <Label Content="Категория" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Height="34" Foreground="White"/>
+            <ComboBox x:Name="cmbCategoryRooms" HorizontalAlignment="Left" Margin="124,20,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbCategoryRooms_SelectionChanged">
+                <ComboBoxItem x:Name="catStandart" Content="Стандарт"/>
+                <ComboBoxItem x:Name="catVip" Content="Вип"/>
+            </ComboBox>
+
+            <Label Content="Цена" HorizontalAlignment="Left" Margin="0,97,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <TextBox x:Name="txtPrice" Text="" HorizontalAlignment="Left" Height="38" Margin="124,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+            <Label Content="Статус" HorizontalAlignment="Left" Margin="0,182,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <ComboBox x:Name="cmbStatus" HorizontalAlignment="Left" Margin="124,182,0,0" VerticalAlignment="Top" Width="120" Height="38" SelectionChanged="CmbStatus_SelectionChanged">
+                <ComboBoxItem x:Name="statReady" Content="Готов к сдаче"/>
+                <ComboBoxItem x:Name="statBusy" Content="Номер занят"/>
+            </ComboBox>
+
+        </Grid>
+
+    </Viewbox>
+</Window>

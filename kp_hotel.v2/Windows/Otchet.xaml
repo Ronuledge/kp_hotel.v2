@@ -1,0 +1,23 @@
+﻿<Window x:Class="kp_hotel.v2.Windows.Otchet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kp_hotel.v2.Windows"
+        mc:Ignorable="d"
+        Title="Otchet" Height="450" Width="632.756" WindowStartupLocation="CenterScreen">
+    <Viewbox>
+        <Grid Height="450" Width="632.756">
+            <DataGrid x:Name="dtGrid" HorizontalAlignment="Left" Height="296" Margin="10,10,0,0" VerticalAlignment="Top" Width="613" BorderBrush="Black"/>
+
+
+            <Button x:Name="btnAddOtchet" Content="сформировать отчёт" HorizontalAlignment="Left" Margin="252,311,0,0" VerticalAlignment="Top" Width="124" Click="BtnAddOtchet_Click" />
+  
+            
+            <Button Content="вывести в exel" HorizontalAlignment="Left" Margin="252,344,0,0" VerticalAlignment="Top" Width="124"/>
+
+
+        </Grid>
+    </Viewbox>
+
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="kp_hotel.v2.Windows.RedactClients"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kp_hotel.v2.Windows"
+        mc:Ignorable="d"
+        Title="Гостиница" Height="390" Width="1000" MinWidth="900" MinHeight="300"  Background="#FF464646" FontFamily="Comic Sans MS" FontSize="20" WindowStyle="ToolWindow" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Viewbox>
+        <Grid>
+            <DataGrid x:Name="dgRedClient" HorizontalAlignment="Left" Height="340" Margin="304,10,0,0" VerticalAlignment="Top" Width="678" SelectionChanged="DgRedClient_SelectionChanged"/>
+
+            <Button x:Name="btnRedClients" Content="Изменить" HorizontalAlignment="Center" Margin="6,284,693,44" VerticalAlignment="Center" Width="293" Height="32" Click="BtnRedClients_Click" Background="White"/>
+            <Button x:Name="btnBack" Content="Назад" Margin="6,321,693,10" Click="BtnBack_Click" Background="White"/>
+
+            <Label Content="Фамилия" HorizontalAlignment="Left" Margin="6,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <TextBox x:Name="txtFam" HorizontalAlignment="Left" Height="38" Margin="107,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192"/>
+
+            <Label Content="Имя" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="38" Margin="107,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192"/>
+
+            <Label Content="Отчество" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <TextBox x:Name="txtOtch" HorizontalAlignment="Left" Height="38" Margin="122,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="177"/>
+
+            <Label Content="Телефон" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="99" Foreground="White"/>
+            <TextBox x:Name="txtTelephone" HorizontalAlignment="Left" Height="38" Margin="122,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="177"/>
+
+        </Grid>
+    </Viewbox>
+</Window>
